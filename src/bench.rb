@@ -9,7 +9,7 @@ coll = db.collection(coll_name)
 
 coll.insert({:time => Time.now})
 
-db[coll_name].find().each{ |doc|
+coll.find().each{ |doc|
   p doc
 }
 
